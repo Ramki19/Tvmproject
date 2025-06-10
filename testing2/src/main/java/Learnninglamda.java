@@ -55,14 +55,14 @@ public class Learnninglamda {
 //        .filter(ni->ni.length()>=4)
 //        .forEach(System.out::println);
 //
-// List<String> list6=new ArrayList<>();
-// list6.add("ramu");
-// list6.add("somu");
-// list6.add("raju");
-// list6.add("ragul");
-// list6.add("ravi");
-// list6.add("somu");
-// list6.add("raju");
+ List<String> list6=new ArrayList<>();
+ list6.add("ramu");
+ list6.add("somu");
+ list6.add("raju");
+ list6.add("ragul");
+ list6.add("ravi");
+ list6.add("somu");
+ list6.add("raju");
         int arrr[] = {12, 24, 22, 26, 16, 43};
         for (int i = 0; i < arrr.length-1; i++) {
             for (int j = 0; j < arrr.length-i-1; j++) {
