@@ -1,25 +1,24 @@
-class Thread2 extends Thread {
-    public void run(){
-        for(int i=0; i<5; i++){
-            System.out.println("Task :1 " + i);
-        }
+import java.util.*;
+public class Threadlearn{
+     static List<String> name=Arrays.asList("ram", "somu", "ragul", "dravid");
+public static Optional<String> finduser(String username){
+for(String us : name){
+    if(us.equalsIgnoreCase(username)){
+        return Optional.of(us);
     }
 }
-
-class Thread1 extends Thread {
-    public void run(){
-        for(int j=10; j>0; j--){
-            System.out.println("Task :2 " + j);
-        }
-    }
+return Optional.empty();
 }
+    public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+        System.out.println("enter the username");
+        String names=sc.nextLine();
+        Optional<String> user=finduser(names);{
+            user.ifPresentOrElse(
+                    User -> System.out.println("welecome user login succesffuly"),
+                    ()-> System.out.println("user not mathced")
+            );
 
-public class Threadlearn {
-    public static void main(String[] args) {
-        Thread2 t = new Thread2();
-        Thread1 t1 = new Thread1();
-
-        t.start();
-        t1.start();
+        }
     }
 }
